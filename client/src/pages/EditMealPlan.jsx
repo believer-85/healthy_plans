@@ -52,7 +52,7 @@ function EditMealPlan() {
         localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/mealplans/${id}`,
+        `${API_URL}/api/mealplans/${id}`,
         formData,
         {
           headers: {

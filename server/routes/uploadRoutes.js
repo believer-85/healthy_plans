@@ -20,7 +20,7 @@ router.post(
 
     res.json({
       imageUrl:
-        `http://localhost:5000/uploads/${req.file.filename}`,
+      `${process.env.SERVER_URL}/uploads/${req.file.filename}`
     });
   }
 );
